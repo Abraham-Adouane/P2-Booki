@@ -15,11 +15,11 @@
     --ff: "Raleway", Arial, Helvetica, sans-serif;
    
    /*- fontsize for computer and tablet -*/
-    --fs-600: 16px;   /* Titles */
-    --fs-200: 12px;    /* Body */
+    --fs-600: 23px;   /* Titles */
+    --fs-200: 14px;    /* Body */
 
     /* Fontsize for phone */
-    --fs-600-m: 25px; /* Titles */
+    --fs-600-m: 26px; /* Titles */
     --fs-200-m: 16px; /* body */
 
 
@@ -61,9 +61,15 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.title, aside .graph{
     font-size: var(--fs-600);
 }
+
 
 .cardName, .bold{
     font-weight: bold;
 }
+
+/*  */

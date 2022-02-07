@@ -3,14 +3,60 @@ main{
     flex-direction: column;
 }
 
+/* Searchbar */
 
 .searchBar{
     align-self: center;
 }
 
+.searchBar input{
+    width: 110%;
+}
+
+.searchBar button{
+    width: 48px;
+    border-radius: 15px;
+}
+
+.btn i{
+    display: initial;
+}
+
+.searchText{
+    display: none;
+}
+
+
+
+
+/* Filter */
+
+.filter{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filter p{
+    margin: 10px;
+}
+
+
+/* HOSTING */
+
 #Hosting{
     width: 100%;
     flex-direction: column-reverse;
+}
+
+/* Article */
+
+article{
+    width: 100%;
+    margin: 0;
+}
+
+article .card{
+    width: 45%;
 }
 
 aside{
@@ -18,25 +64,37 @@ aside{
     margin: 0 0 25px 0;
 }
 
-aside .cardBlock{
-    justify-content: space-around;
-    flex-direction: row;
-}
-
-aside .card{
-    width: 32%;
-}
-
+/* Aside */
 
 aside .textArea{
     width: 60%;
-
 }
 
-article{
+
+#Activities .cardBlock{
     width: 100%;
-    margin: 0;
+    height: 1000px;   
 }
+
+#Activities .card{
+    width: 47%;
+}
+
+.card.item1, .card.item6 {
+    height: 400px;
+}
+
+.card.item2, .card.item5 {
+    height: 300px;
+}
+
+.card.item3, .card.item4 {
+    height: 200px;
+}
+
+
+
+
 
 
 @media screen and (max-width: 768px){
@@ -71,7 +129,7 @@ nav, nav ul{
 
 nav a{
     padding: 15px 0;
-;    border: none !important
+    border: none !important;
     border-bottom: var(--lightColor) 3px solid !important;
     transition-duration: 1000ms;
     transition-property: border-bottom, color, font-weight;
@@ -107,40 +165,19 @@ main>p{
 }
 
 .searchBar button{
-    width: 40px;
+    width: 48px;
     border-radius: 15px;
 }
 
-.btn i{
-    display: initial;
-}
 
-.searchText{
-    display: none;
-}
+/* Filter ================================== */
 
-/* Filter */
-/*********************************======================================******/
-
-
-.filter{
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.filter p{
-    margin: 10px;
-}
 
 .filterButton{
-    height: 48px;
     margin: 5px 20px 5px 0;
-    border-radius: 25px;    
 }
 
 .bgIcone{
-    width: 50px;
-    height: 50px;
     border-radius: 25px;
 }
 
@@ -149,25 +186,17 @@ main>p{
 }
 
 
-.infoText i{
-    width: 35px;
-    height: 35px;
-    border-radius: 30px;
-}
-
 
 /*=== HOSTING ============================= */
-/* #Hosting{
-    width: 50%;
-} */
 
 #Hosting .card{
     width: 100%;
-    height: 200px;
 }
+
 
 aside{
     width: 100%;
+    margin: 0;
     padding: 25px;
     border-radius: 0px;
 }
@@ -177,13 +206,8 @@ aside .cardBlock{
 }
 
 aside .card{
-    height: 140px!important;
     margin: 10px;
 
-}
-
-aside .housingPicture{
-    height: 100%;
 }
 
 aside .textArea{
@@ -197,11 +221,7 @@ article{
 }
 
 article .card{
-    height: 220px!important;
-}
-
-article .housingPicture{
-    height: 60%;
+    height: 220px;
 }
 
 article .textArea{
@@ -209,8 +229,6 @@ article .textArea{
 }
 
 /*=== ACTIVITIES ============================= */
-
-
 
 #Activities{
     width: 100%;
@@ -257,11 +275,5 @@ article .textArea{
 
 
 
-/* main{
-    margin: auto;
-    padding : 0;
-    width: 100%;
-
-} */
 
 

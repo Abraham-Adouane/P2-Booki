@@ -5,13 +5,10 @@ footer{
 }
 
 .footerBlock{
-    border: blue solid 2px;
-
     padding: 50px;
     display: flex;
     justify-content: space-between;    
 }
-
 
 footer ul{
     list-style: none;
