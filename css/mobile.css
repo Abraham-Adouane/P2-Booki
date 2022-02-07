@@ -71,7 +71,7 @@ nav, nav ul{
 
 nav a{
     padding: 15px 0;
-    border: none !important;
+;    border: none !important
     border-bottom: var(--lightColor) 3px solid !important;
     transition-duration: 1000ms;
     transition-property: border-bottom, color, font-weight;
@@ -120,23 +120,20 @@ main>p{
 }
 
 /* Filter */
+/*********************************======================================******/
 
-.filterBlock{
-    margin: 25px;
+
+.filter{
     flex-direction: column;
     align-items: flex-start;
 }
 
-.filterBlock p{
-    margin: 0 0 10px;
-}
-
-.filterBlock ul{
-    padding: 0 30px 0 0;
-    display: flex;
+.filter p{
+    margin: 10px;
 }
 
 .filterButton{
+    height: 48px;
     margin: 5px 20px 5px 0;
     border-radius: 25px;    
 }
@@ -160,6 +157,9 @@ main>p{
 
 
 /*=== HOSTING ============================= */
+/* #Hosting{
+    width: 50%;
+} */
 
 #Hosting .card{
     width: 100%;
@@ -211,6 +211,7 @@ article .textArea{
 /*=== ACTIVITIES ============================= */
 
 
+
 #Activities{
     width: 100%;
     padding: 25px;
@@ -242,7 +243,6 @@ article .textArea{
 
 /* FOOTER ----------------------*/
 
-
 .footerBlock{
     display: flex;
     flex-direction: column;
@@ -254,4 +254,14 @@ article .textArea{
 
 }
 
-}
+
+
+
+/* main{
+    margin: auto;
+    padding : 0;
+    width: 100%;
+
+} */
+
+

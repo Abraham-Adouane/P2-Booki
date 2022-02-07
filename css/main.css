@@ -38,23 +38,29 @@
     display: none;
 }
 
-.filterBlock{
-    width: 100%;
-    margin: 15px 0;
+
+.filter{
+    border: 2px solid red;
     display: flex;
     align-items: center;
-    font-weight: bold;
 }
 
+.filter p{
+    margin:  0;
+}
+
+
 .filter ul{
+    background-color: aquamarine;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    min-width: 400px;
     padding: 0 0 0 10px;
 }
 
 .filterButton{
+    height: 36px;
     margin: 6px;
     padding-left: 0;
     font-weight: bold;
@@ -64,11 +70,8 @@
     border: var(--bgColor) solid 3px;
     border-left: none;
     border-radius: 20px;
-    
-    
-     
     overflow: visible;
-    transition-duration: 500ms;
+    transition-duration: 350ms;
     transition-property: transform;
 }
 
@@ -76,6 +79,7 @@
 .filterButton::before{
     z-index: -1;
     position: absolute;
+    left: 10px;
     content: "";
     background-color: var(--lightColor);
     width: 0%;
@@ -86,7 +90,7 @@
 }
 
 .filterButton:hover::before{  
-    width: 100%;
+    width: calc(100% - 10px);
 }
 
 .filterButton:hover{
@@ -115,7 +119,6 @@
 }
 
 
-/*--------------------------*/
 
 .infoText{
     margin: 25px 0;
@@ -141,6 +144,7 @@
 /* HOSTING =============================================================================================*/
 
 #Hosting{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -150,7 +154,7 @@
     background-color: white;
     box-shadow: var(--shadow);
     border-radius: 15px; 
-    transition-duration: 500ms;
+    transition-duration: 350ms;
     transition-property: transform, box-shadow;
     }
 

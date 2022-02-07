@@ -1,12 +1,12 @@
 footer{
     
     background-color: var(--bgColor);
+
 }
 
 .footerBlock{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    border: blue solid 2px;
+
     padding: 50px;
     display: flex;
     justify-content: space-between;    
